@@ -1,0 +1,175 @@
+:root {
+  /* Colors */
+  --primary-color: #4caf50;
+  --primary-hover-color: #45a049;
+  --secondary-color: #f4f4f4;
+  --text-color: #333;
+  --background-color: #ffffff;
+  --border-color: #ccc;
+
+  /* Font Sizes */
+  --font-size-small: 12px;
+  --font-size-medium: 16px;
+  --font-size-large: 24px;
+
+  /* Spacing */
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+
+  /* Border Radius */
+  --border-radius: 4px;
+
+  /* Shadows */
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Styling */
+.container {
+  background-color: var(--background-color);
+  padding: var(--spacing-large);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: var(--spacing-large);
+  font-size: var(--font-size-large);
+  color: var(--text-color);
+}
+
+/* Input Section Styling */
+.input-section {
+  display: flex;
+  gap: var(--spacing-small);
+  margin-bottom: var(--spacing-large);
+}
+
+#todo-input {
+  flex: 1;
+  padding: var(--spacing-small);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-medium);
+}
+
+#add-btn {
+  padding: var(--spacing-small) var(--spacing-large);
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: var(--font-size-medium);
+}
+
+#add-btn:hover {
+  background-color: var(--primary-hover-color);
+}
+
+/* To-Do List Styling */
+#todo-list {
+  list-style-type: none;
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--spacing-medium);
+  padding: var(--spacing-small);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-small);
+  background-color: var(--secondary-color);
+}
+
+#todo-list li input[type="checkbox"] {
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  border: 2px solid var(--border-color);
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+#todo-list li input[type="checkbox"]:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+#todo-list li span {
+  flex: 1;
+}
+
+#todo-list li .completed {
+  text-decoration: line-through;
+  color: #888;
+  transition: all 0.2s ease;
+}
+
+#todo-list li button {
+  margin-left: auto;
+  background-color: transparent;
+  color: #dc3545;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-small);
+  cursor: pointer;
+  font-size: var(--font-size-medium);
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+#todo-list li button span {
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+#todo-list li button:hover {
+  color: #c82333;
+  background-color: transparent;
+}
+
+#todo-list li button i {
+  font-size: var(--font-size-medium);
+  transition: all 0.3s ease;
+}
+
+#todo-list li button .trash-open {
+  display: none;
+}
+
+#todo-list li button .trash-closed {
+  display: inline-block;
+}
+
+#todo-list li button:hover .trash-open {
+  display: inline-block;
+}
+
+#todo-list li button:hover .trash-closed {
+  display: none;
+}

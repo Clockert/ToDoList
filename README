@@ -1,0 +1,37 @@
+**Task Summary:**
+
+You are to create an **Interactive To-Do List Application** using JavaScript, building on provided HTML and CSS. The focus is on implementing JavaScript functionality to manage the to-do list, showcasing skills in DOM manipulation, event handling, and working with arrays and objects.
+
+**Key Tasks:**
+
+1. **Rendering To-Dos:**
+
+   - Write a function to display to-do items from a `todos` array.
+   - Each to-do should appear as an `li` element within a `ul`, showing the to-do text.
+
+2. **Adding To-Dos:**
+
+   - Enable users to add new to-do items.
+   - When text is entered and "Add" is clicked, the new to-do is added to the `todos` array, and the list is updated.
+   - Ensure each to-do has a unique `id`.
+
+3. **Deleting To-Dos:**
+   - Add a delete button/icon to each to-do.
+   - When clicked, the corresponding to-do is removed from the `todos` array, and the list is updated.
+
+**Testing:**
+
+- Add multiple to-dos to verify they render correctly.
+- Delete to-dos to confirm they are removed from both the list and the `todos` array.
+
+**Submission:**
+
+- Provide a **GitHub repository link**, **CodePen link**, or a **ZIP file** containing your HTML, CSS, and JavaScript files via the course assignment portal.
+
+**Hints:**
+
+- Use `document.getElementById()` to select DOM elements.
+- Use `addEventListener()` for event handling.
+- Use array methods like `map()`, `filter()`, and `find()` to manage to-dos.
+
+This task will help you practice core JavaScript concepts and web development skills.
